@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UFT-8"/>
+        <title>Ficha Colegial</title>
+        <style> .y{
+            background-color:blue; 
+            } </style>
+    </head>
+    <body>
+        <fieldset>
+        <h3>Manutenção do Orgão Colegiado</h3>
+        <br>
+        <table border="1">
+            <tr>
+                <th class="y">Unidade</th>
+                <td>FACULDADE DE ENGENHARIA DA ILHA SOLTEIRA</td>
+            </tr>
+            <tr>
+                <th class="y">Tipo Colegiado</th>
+                <td>CONGREGAÇÃO</td>
+            </tr>
+        </table>
+        <br>
+        <h3>Orgão Colegiado</h3>
+        <br>
+        <form action="atvd3.html" method="POST">
+            Nome
+            <input type="text" id="tNome" name="nome" value="CONGREGAÇÃO DA FACULDADE DE ILHA SOLTEIRA">
+            <br>
+            <br>
+            Sigla
+            <input type="text" id="tSigla" name="sigla" value="CFIS">
+            Status
+            <label for="status"></label>
+            <select id="status">
+                <option value="ativado">ATIVADO</option>
+                <option value="desativado">DESATIVADO</option>
+            </select>
+            <br>
+            <br>
+            Data de Ativação
+            <input type="date" id="tData" name="data">
+            Data Desativação
+            <input type="date" id="tDate" name="date">
+            <br>
+            <br>
+            Orgão de Origem
+            <input type="text" id="tOrigem" name="origem">
+            <input type="submit" value="Buscar">
+            <br>
+            <br>
+            Orgão Superior
+            <input type="text" id="tSuperior" name="superior">
+            <input type="submit" value="Buscar">
+            <br>
+            <br>
+            <label for="comentario">Documentação</label>
+            <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Salvar">
+            <input type="submit" value="Excluir">
+            </fieldset>
+        </form>
+    </body>
+</html>
